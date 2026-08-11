@@ -9,7 +9,6 @@
 
     <style>
 
-
         * {
             margin: 0;
             padding: 0;
@@ -44,7 +43,6 @@
             --card: rgba(15, 23, 42, 0.85);
             --border: rgba(255, 255, 255, 0.1);
         }
-
 
         /* =========================
            NAVBAR
@@ -120,7 +118,6 @@
             font-size: 28px;
             cursor: pointer;
         }
-
 
         /* =========================
            HERO
@@ -237,7 +234,6 @@
             color: white;
         }
 
-
         /* PROFILE IMAGE */
 
         .profile-container {
@@ -280,7 +276,6 @@
                 0 20px 50px rgba(0,0,0,0.25);
         }
 
-
         /* =========================
            SECTIONS
         ========================= */
@@ -313,7 +308,6 @@
             color: #64748b;
         }
 
-
         /* =========================
            ABOUT
         ========================= */
@@ -327,7 +321,6 @@
             line-height: 1.9;
             font-size: 17px;
         }
-
 
         /* =========================
            SKILLS
@@ -373,7 +366,6 @@
 
             transition: width 1.5s ease;
         }
-
 
         /* =========================
            CARDS
@@ -421,7 +413,6 @@
             margin: 8px 0;
             line-height: 1.6;
         }
-
 
         /* =========================
            PROJECT
@@ -471,6 +462,75 @@
             color: #93c5fd;
         }
 
+        /* =========================
+           WEB TECHNOLOGY LAB
+        ========================= */
+
+        .lab-card {
+            grid-column: 1 / -1;
+        }
+
+        .lab-card h3 {
+            font-size: 25px;
+        }
+
+        .lab-description {
+            margin-bottom: 25px !important;
+        }
+
+        .exercise-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0 25px;
+        }
+
+        .exercise-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 18px 20px;
+
+            border-radius: 12px;
+
+            background: #f1f5f9;
+
+            color: var(--text);
+
+            text-decoration: none;
+
+            border: 1px solid var(--border);
+
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+        body.dark .exercise-link {
+            background: #1e293b;
+            color: #e2e8f0;
+        }
+
+        .exercise-link span:last-child {
+            color: var(--primary);
+            font-size: 20px;
+        }
+
+        .exercise-link:hover {
+            transform: translateY(-4px);
+            background: linear-gradient(
+                135deg,
+                #2563eb,
+                #7c3aed
+            );
+            color: white;
+            box-shadow: 0 10px 25px rgba(37,99,235,0.25);
+        }
+
+        .exercise-link:hover span:last-child {
+            color: white;
+        }
 
         /* =========================
            CONTACT
@@ -539,7 +599,6 @@
             transform: translateY(-5px) rotate(10deg);
         }
 
-
         /* =========================
            FOOTER
         ========================= */
@@ -550,7 +609,6 @@
             color: white;
             text-align: center;
         }
-
 
         /* =========================
            SCROLL TOP
@@ -584,7 +642,6 @@
 
             z-index: 999;
         }
-
 
         /* =========================
            ANIMATIONS
@@ -626,7 +683,6 @@
             }
 
         }
-
 
         /* =========================
            MOBILE
@@ -679,15 +735,17 @@
                 padding: 70px 6%;
             }
 
+            .exercise-list {
+                grid-template-columns: 1fr;
+            }
+
         }
 
     </style>
 
 </head>
 
-
 <body>
-
 
 <!-- =========================
      NAVBAR
@@ -719,7 +777,6 @@
     </div>
 
 </nav>
-
 
 
 <!-- =========================
@@ -776,7 +833,6 @@
 </section>
 
 
-
 <!-- =========================
      ABOUT
 ========================= -->
@@ -790,7 +846,6 @@
         <p>Get to know me</p>
 
     </div>
-
 
     <div class="about-container">
 
@@ -813,7 +868,6 @@
 </section>
 
 
-
 <!-- =========================
      SKILLS
 ========================= -->
@@ -828,17 +882,13 @@
 
     </div>
 
-
     <div class="skills-container">
-
 
         <div class="skill">
 
             <div class="skill-header">
-
                 <span>HTML</span>
                 <span>90%</span>
-
             </div>
 
             <div class="skill-bar">
@@ -853,14 +903,11 @@
         </div>
 
 
-
         <div class="skill">
 
             <div class="skill-header">
-
                 <span>CSS</span>
                 <span>85%</span>
-
             </div>
 
             <div class="skill-bar">
@@ -875,14 +922,11 @@
         </div>
 
 
-
         <div class="skill">
 
             <div class="skill-header">
-
                 <span>JavaScript</span>
                 <span>80%</span>
-
             </div>
 
             <div class="skill-bar">
@@ -897,14 +941,11 @@
         </div>
 
 
-
         <div class="skill">
 
             <div class="skill-header">
-
                 <span>React JS</span>
                 <span>75%</span>
-
             </div>
 
             <div class="skill-bar">
@@ -919,14 +960,11 @@
         </div>
 
 
-
         <div class="skill">
 
             <div class="skill-header">
-
                 <span>Java</span>
                 <span>70%</span>
-
             </div>
 
             <div class="skill-bar">
@@ -940,11 +978,9 @@
 
         </div>
 
-
     </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -961,9 +997,7 @@
 
     </div>
 
-
     <div class="cards">
-
 
         <div class="card">
 
@@ -980,7 +1014,6 @@
             </p>
 
         </div>
-
 
 
         <div class="card">
@@ -1000,7 +1033,6 @@
         </div>
 
 
-
         <div class="card">
 
             <h3>
@@ -1016,7 +1048,6 @@
             </p>
 
         </div>
-
 
 
         <div class="card">
@@ -1035,11 +1066,9 @@
 
         </div>
 
-
     </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1055,7 +1084,6 @@
         <p>My professional experience</p>
 
     </div>
-
 
     <div class="cards">
 
@@ -1097,7 +1125,6 @@
     </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1151,12 +1178,15 @@
 
             </div>
 
-            <a href="#" class="btn">
+            <a
+                href="#"
+                class="btn"
+                target="_blank"
+            >
                 View Project
             </a>
 
         </div>
-
 
 
         <!-- PROJECT 2 -->
@@ -1189,12 +1219,15 @@
 
             </div>
 
-            <a href="#" class="btn">
+            <a
+                href="#"
+                class="btn"
+                target="_blank"
+            >
                 Coming Soon
             </a>
 
         </div>
-
 
 
         <!-- PROJECT 3 -->
@@ -1227,17 +1260,147 @@
 
             </div>
 
-            <a href="#" class="btn">
+            <a
+                href="#"
+                class="btn"
+                target="_blank"
+            >
                 In Development
             </a>
 
         </div>
 
 
+        <!-- =========================
+             WEB TECHNOLOGY LAB
+        ========================= -->
+
+        <div class="card project-card lab-card">
+
+            <h3>
+                Web Technology Lab
+            </h3>
+
+            <p class="lab-description">
+                A collection of Web Technology Lab exercises
+                developed using HTML, CSS, JavaScript and
+                other web technologies. Click any exercise
+                below to view the project on GitHub.
+            </p>
+
+
+            <div class="project-tech">
+
+                <span class="tech">
+                    HTML
+                </span>
+
+                <span class="tech">
+                    CSS
+                </span>
+
+                <span class="tech">
+                    JavaScript
+                </span>
+
+                <span class="tech">
+                    Web Technology
+                </span>
+
+
+            </div>
+
+
+            <!-- FOUR EXERCISES -->
+
+            <div class="exercise-list">
+
+                <!-- EXERCISE 1 -->
+
+                <a
+                    href="https://kural29.github.io/web-technology-lab/ex1/cv.html"
+                    class="exercise-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <span>
+                        portfolio
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <!-- EXERCISE 2 -->
+
+                <a
+                    href="https://kural29.github.io/web-technology-lab/ex2/index.html"
+                    class="exercise-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <span>
+                        Online Shopping website
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <!-- EXERCISE 3 -->
+
+                <a
+                    href="https://kural29.github.io/web-technology-lab/ex3/index.html"
+                    class="exercise-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <span>
+                        Quiz
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <!-- EXERCISE 4 -->
+
+                <a
+                    href="https://kural29.github.io/web-technology-lab/ex4/index.html"
+                    class="exercise-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <span>
+                        Calculator
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1254,9 +1417,7 @@
 
     </div>
 
-
     <div class="cards">
-
 
         <div class="card">
 
@@ -1272,7 +1433,6 @@
         </div>
 
 
-
         <div class="card">
 
             <h3>
@@ -1284,7 +1444,6 @@
             </p>
 
         </div>
-
 
 
         <div class="card">
@@ -1300,11 +1459,9 @@
 
         </div>
 
-
     </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1345,11 +1502,19 @@
 
     <div class="social-links">
 
-        <a href="#" title="GitHub">
+        <a
+            href="#"
+            title="GitHub"
+            target="_blank"
+        >
             G
         </a>
 
-        <a href="#" title="LinkedIn">
+        <a
+            href="#"
+            title="LinkedIn"
+            target="_blank"
+        >
             in
         </a>
 
@@ -1360,7 +1525,6 @@
     </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1378,7 +1542,6 @@
 </footer>
 
 
-
 <!-- SCROLL TOP -->
 
 <button id="topBtn">
@@ -1386,13 +1549,11 @@
 </button>
 
 
-
 <!-- =========================
      JAVASCRIPT
 ========================= -->
 
 <script>
-
 
 /* =========================
    MOBILE MENU
@@ -1403,7 +1564,6 @@ const menuBtn =
 
 const navLinks =
     document.getElementById("navLinks");
-
 
 menuBtn.addEventListener("click", () => {
 
@@ -1426,14 +1586,12 @@ document.querySelectorAll(".nav-links a")
 });
 
 
-
 /* =========================
    DARK MODE
 ========================= */
 
 const themeBtn =
     document.getElementById("themeBtn");
-
 
 themeBtn.addEventListener("click", () => {
 
@@ -1477,14 +1635,12 @@ if (
 }
 
 
-
 /* =========================
    TYPING EFFECT
 ========================= */
 
 const typingElement =
     document.querySelector(".typing");
-
 
 const roles = [
 
@@ -1495,17 +1651,14 @@ const roles = [
 
 ];
 
-
 let roleIndex = 0;
 let charIndex = 0;
 let deleting = false;
-
 
 function typeEffect() {
 
     const currentRole =
         roles[roleIndex];
-
 
     if (!deleting) {
 
@@ -1516,7 +1669,6 @@ function typeEffect() {
             );
 
         charIndex++;
-
 
         if (
             charIndex ===
@@ -1544,7 +1696,6 @@ function typeEffect() {
 
         charIndex--;
 
-
         if (charIndex === 0) {
 
             deleting = false;
@@ -1557,7 +1708,6 @@ function typeEffect() {
 
     }
 
-
     setTimeout(
         typeEffect,
         deleting ? 60 : 100
@@ -1565,9 +1715,7 @@ function typeEffect() {
 
 }
 
-
 typeEffect();
-
 
 
 /* =========================
@@ -1576,7 +1724,6 @@ typeEffect();
 
 const revealElements =
     document.querySelectorAll(".reveal");
-
 
 function revealOnScroll() {
 
@@ -1601,15 +1748,12 @@ function revealOnScroll() {
 
 }
 
-
 window.addEventListener(
     "scroll",
     revealOnScroll
 );
 
-
 revealOnScroll();
-
 
 
 /* =========================
@@ -1621,19 +1765,15 @@ const skillBars =
         ".skill-progress"
     );
 
-
 let skillsAnimated = false;
-
 
 function animateSkills() {
 
     const skillsSection =
         document.getElementById("skills");
 
-
     const position =
         skillsSection.getBoundingClientRect();
-
 
     if (
         position.top <
@@ -1655,12 +1795,10 @@ function animateSkills() {
 
 }
 
-
 window.addEventListener(
     "scroll",
     animateSkills
 );
-
 
 
 /* =========================
@@ -1669,7 +1807,6 @@ window.addEventListener(
 
 const topBtn =
     document.getElementById("topBtn");
-
 
 window.addEventListener(
     "scroll",
@@ -1690,7 +1827,6 @@ window.addEventListener(
     }
 );
 
-
 topBtn.addEventListener(
     "click",
     () => {
@@ -1703,9 +1839,7 @@ topBtn.addEventListener(
     }
 );
 
-
 </script>
-
 
 </body>
 
