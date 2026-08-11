@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ShopZone</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-cart-shopping"></i>
+ShopZone
+</div>
+
+
+<div class="search">
+<input type="text" placeholder="Search products...">
+<button>
+<i class="fa fa-search"></i>
+</button>
+</div>
+
+
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+
+
+
+<div class="icons">
+
+<i class="fa-solid fa-heart"></i>
+
+<div class="cart" onclick="openCart()">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">0</span>
+
+</div>
+
+
+</div>
+
+</header>
+
+
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+
+<div class="heroText">
+
+<h1>
+Big Summer Sale
+</h1>
+
+<p>
+Up to 70% Discount on Latest Products
+</p>
+
+<button>
+Shop Now
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- Color Theme -->
+
+<section class="theme">
+
+<h2>Choose Theme Color</h2>
+
+<div class="colors">
+
+<button onclick="changeTheme('#ff416c')"></button>
+
+<button onclick="changeTheme('#2193b0')"></button>
+
+<button onclick="changeTheme('#11998e')"></button>
+
+<button onclick="changeTheme('#8e2de2')"></button>
+
+<button onclick="changeTheme('#ff9800')"></button>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Products -->
+
+<section class="products" id="products">
+
+<h1>Trending Products</h1>
+
+
+<div class="product-container">
+
+
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSftntPyxVflSjEsQXJhGX44vEYDYkNLa0Ta2qrjcXZhw&s=10">
+
+<h3>Running Shoes</h3>
+
+<p class="rating">
+⭐⭐⭐⭐⭐
+</p>
+
+<h2>700</h2>
+
+<button onclick="addToCart('Running Shoes',700)">
+Add Cart
+</button>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE2AK9QBPUVqNS63bDYyqD5BfkGvvqCqaC8WoUzy8eyg&s=10">
+
+<h3>Smart Watch</h3>
+
+<p class="rating">
+⭐⭐⭐⭐☆
+</p>
+
+<h2>3000</h2>
+
+<button onclick="addToCart('Smart Watch',3000)">
+Add Cart
+</button>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCt0QXScDtHvqPkezVqFfcx4QSogjwQj3rDVU7rOFJZA&s=10">
+
+<h3>Wireless Headphones</h3>
+
+<p class="rating">
+⭐⭐⭐⭐⭐
+</p>
+
+<h2>1500</h2>
+
+<button onclick="addToCart('Headphones',1500)">
+Add Cart
+</button>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGXwG95w5EoCb3AcrsQGlvZPtOsmdg72jK0o9GBcoakQ&s=10">
+
+<h3>Gaming Laptop</h3>
+
+<p class="rating">
+⭐⭐⭐⭐⭐
+</p>
+
+<h2>50000</h2>
+
+<button onclick="addToCart('Laptop',50000)">
+Add Cart
+</button>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTawv5sMCNTvQtrncB6YKZGA0X2yYL46UWO1RRKNu8jBg&s">
+
+<h3>Mobile Phone</h3>
+
+<p class="rating">
+⭐⭐⭐⭐☆
+</p>
+
+<h2>20000</h2>
+
+<button onclick="addToCart('Mobile Phone',20000)">
+Add Cart
+</button>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM9MRsIn7fr-_00CEfyw8e2iBDuZZvLqyxY2RR-BmigA&s=10">
+
+<h3>Travel Bag</h3>
+
+<p class="rating">
+⭐⭐⭐⭐⭐
+</p>
+
+<h2>10000</h2>
+
+<button onclick="addToCart('Travel Bag',1000)">
+Add Cart
+</button>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH0VHV8mWp-OTMGCf3zc8mDUFWTLl9pA5M3SUX3Ts_WQ&s=10">
+
+<h3>Camera</h3>
+
+<p class="rating">
+⭐⭐⭐⭐⭐
+</p>
+
+<h2>5000</h2>
+
+<button onclick="addToCart('Camera',5000)">
+Add Cart
+</button>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8axYeDB_jM8WgptBsUmh2lWNwGT94GhzKMnnBgTQssA&s=10">
+
+<h3>Fashion Jacket</h3>
+
+<p class="rating">
+⭐⭐⭐⭐☆
+</p>
+
+<h2>2000</h2>
+
+<button onclick="addToCart('Fashion Jacket',2000)">
+Add Cart
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+<section class="contact" id="contact">
+
+<h1>Contact Us</h1>
+
+<p>
+📧 Email: support@shopzone.com
+</p>
+
+<p>
+📞 Phone: +91 98765 43210
+</p>
+
+<p>
+📍 Location: Tamil Nadu, India
+</p>
+
+</section>
+
+
+
+<footer>
+
+<h3>
+© 2026 ShopZone
+</h3>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+<!-- Cart Sidebar -->
+
+<div class="cart-box" id="cartBox">
+
+    <div class="cart-header">
+        <h2>Your Cart 🛒</h2>
+        <button onclick="closeCart()">✖</button>
+    </div>
+
+
+    <div id="cartItems">
+        <p>Your cart is empty</p>
+    </div>
+
+<h3>
+    Total: ₹<span id="total">0</span>
+</h3>
+
+<button class="pay-btn" onclick="proceedToPay()">
+    Place Order
+</button>
+
+
+</div>
+
+
+</body>
+
+</html>
