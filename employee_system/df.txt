@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+class Invalid_Quantity extends Exception {
+    Invalid_Quantity(String m) {
+        super(m);
+    }
+}
+
+class Insuffiecient extends Exception {
+    Insuffiecient(String m) {
+        super(m);
+    }
+}
+
+public class Shopping {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int stock = 100;
+        double price = 2000;
+        int qty = sc.nextInt();
+        double wallet = sc.nextDouble();
+
+        try {
+            if (qty > stock) {
+                throw new Invalid_Quantity("Invalid Quantity");
+            }
+            if (qty * price > wallet) {
+                throw new Insuffiecient("Insuffiecient amount!");
+            }
+            System.out.println("Order Successful! Total Rs : " + (qty * price));
+        } catch (Invalid_Quantity | Insuffiecient e) {
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            System.out.println("Transaction Finalised!");
+        }
+        
+        sc.close();
+    }
+}
